@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+//custom hook for admin checking
 const useAdmin = (email) => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [isAdminLoading, setIsAdminLoading] = useState(true);

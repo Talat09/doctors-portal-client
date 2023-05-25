@@ -2,6 +2,7 @@ import React from "react";
 import chair from "../../../assets/images/chair.png";
 import { DayPicker } from "react-day-picker";
 import bg from "../../../assets/images/bg.png";
+// banner appointment route showing banner and calender
 const AppointmentBanner = ({ selectedDate, setSelectedDate }) => {
   return (
     <header className="my-6">

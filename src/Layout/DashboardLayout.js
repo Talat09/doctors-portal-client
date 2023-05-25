@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 import useAdmin from "../hooks/useAdmin";
 import Navbar from "../Pages/Shared/Navbar/Navbar";
-
+//layout
 const DashboardLayout = () => {
   const { user } = useContext(AuthContext);
   const [isAdmin] = useAdmin(user?.email);

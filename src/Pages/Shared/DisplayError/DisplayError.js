@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate, useRouteError } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider";
-
+//error checking component
 const DisplayError = () => {
   const { LogOut } = useContext(AuthContext);
   const error = useRouteError();

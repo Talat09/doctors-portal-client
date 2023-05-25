@@ -7,9 +7,13 @@ import CheckoutForm from "./CheckoutForm";
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
 
 const Payment = () => {
+  //load booking data
   const booking = useLoaderData();
+  // use navigation fo redirect url
   const navigation = useNavigation();
+  //distructuring property form booking
   const { treatment, price, appointmentDate, slot } = booking;
+  //loading checking
   if (navigation.state === "loading") {
     return <Loading></Loading>;
   }

@@ -3,6 +3,7 @@ import AppointmentBanner from "../AppointmentBanner/AppointmentBanner";
 import AvailableAppointments from "../AvailableAppointments/AvailableAppointments";
 
 const Appointment = () => {
+  //set selected date and pass child component
   const [selectedDate, setSelectedDate] = useState(new Date());
   return (
     <div>
